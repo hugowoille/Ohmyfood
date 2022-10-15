@@ -1,2 +1,2 @@
 # Ohmyfood
-application de recensement de restaurant gastronomique
+application de recensement de restaurants gastronomiques
