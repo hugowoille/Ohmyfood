@@ -4,14 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> TITRE DU SITE </title>
+  <title> Oh my food </title>
 
   <!-- Meta description -->
 
   <meta name="description" content="">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Font-awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
 
   <!-- Place favicon.ico in the root directory -->
 
@@ -23,19 +28,40 @@
 
 <body>
 
+    <!-- Navbar -->
+
   <header>
-
     <nav>
+      <img src="img/logo/ohmyfood@2x.svg" alt="">
+      <div class="nav__links">
+        <a href="">Nos restaurants</a>
+        <a href="">Contact</a>
+      </div>
     </nav>
-
   </header>
 
+    <!-- main -->
+
   <main>
+
+    <!-- position -->
+
+    <section class="location__container">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>Paris, Belleville</p>
+    </section>
+
+    <!-- description -->
+
+    <section class="top__container">
+      <h2>Réservez le menu qui vous convient</h2>
+      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+      <a href="" class="btn">Explorer nos restaurants</a>
+    </section>
+
   </main>
 
-
-  <!--------------- footer ----------------->
-
+  <!-- footer -->
 
   <footer>
   </footer>

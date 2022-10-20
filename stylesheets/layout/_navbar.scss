@@ -5,3 +5,36 @@
   margin: 0;
   padding: 0;
 }
+nav{
+  position: relative;
+  display:flex;
+  height:80px;
+  -webkit-box-shadow: 0px -1px 3px 4px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px -1px 3px 4px rgba(0,0,0,0.32);
+box-shadow: 0px -1px 3px 4px rgba(0,0,0,0.1);
+  .nav__links{
+    display:none;
+  }
+  img{
+    margin:0 auto;
+    display:block;
+    max-width:270px;
+  }
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    padding:0 30px;
+    img{
+      margin: unset;
+    }
+    .nav__links{
+      display:flex;
+      align-items: center;
+      a{
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 1.1em;
+        color:$dark-font;
+      }
+    }
+  }
+}

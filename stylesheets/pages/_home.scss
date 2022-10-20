@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+p,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4  {
+    font-family: $font-text;
+}
+
+.location__container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    color:$dark-font;
+    background-color: rgba($color: #eeeeee, $alpha: 1.0);
+    p {
+        margin-left: 30px;
+    }
+}
+.top__container{
+    background-color: rgba($color: #f8f8f8, $alpha: 1.0);
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 300px;
+    justify-content: space-around;
+    h2{
+        font-size: 1.3em;
+        font-weight: 900;
+        
+    }
+    p{
+        font-size: 0.9em;
+        font-weight: 300;
+
+    }
+}
