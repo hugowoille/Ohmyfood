@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Place favicon.ico in the root directory -->
 
@@ -32,7 +32,9 @@
 
   <header>
     <nav>
-      <img src="img/logo/ohmyfood@2x.svg" alt="">
+      <a href="index.html">
+        <img src="img/logo/ohmyfood@2x.svg" alt="">
+      </a>
       <div class="nav__links">
         <a href="">Nos restaurants</a>
         <a href="">Contact</a>
@@ -56,7 +58,7 @@
       <!-- description -->
 
       <section class="top__container__presentation">
-        <h2>Réservez le menu qui vous convient</h2>
+        <h2 class="h2__main">Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
         <a href="" class="btn">Explorer nos restaurants</a>
       </section>
@@ -81,43 +83,89 @@
 
       <!-- restaurants -->
 
-      <section class="restaurant__container">
+      <section class="restaurants__container">
         <h2>Restaurants</h2>
-        <a href="" class="cards__container cards__container--new">
-          <img src="img/restaurants/la_palette_de_gout.webp" alt="">
-          <div class="text__container">
+
+        <!-- La palette de gout -->
+
+        <div class="cards__container cards__container--new">
+          <a href="palette_de_gout.html">
+            <img src="img/restaurants/la_palette_de_gout.webp" alt="">
+          </a>
+          <a href="palette_de_gout.html" class="text__container">
             <h3>La palette de goût</h3>
             <p>Ménilmontant</p>
-          </div>
-        </a>
-        <a href="" class="cards__container cards__container--new">
-          <img src="img/restaurants/la_note_enchantee.webp" alt="">
-          <div class="text__container">
+          </a>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <!-- La note enchantée -->
+
+        <div class="cards__container cards__container--new">
+          <a href="note_enchantee.html">
+            <img src="img/restaurants/la_note_enchantee.webp" alt="">
+          </a>
+          <a href="note_enchantee.html" class="text__container">
             <h3>La note enchantée</h3>
             <p>Charonne</p>
-          </div>
-        </a>
-        <a href="" class="cards__container">
-          <img src="img/restaurants/a_la_francaise.webp" alt="">
-          <div class="text__container">
+          </a>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <!-- A la française -->
+
+        <div class="cards__container">
+          <a href="a_la_francaise.html">
+            <img src="img/restaurants/a_la_francaise.webp" alt="">
+          </a>
+          <a href="a_la_francaise.html" class="text__container">
             <h3>À la française</h3>
             <p>Cité Rouge</p>
-          </div>
-        </a>
-        <a href="" class="cards__container">
-          <img src="img/restaurants/le_delice_des_sens.webp" alt="">
-          <div class="text__container">
+          </a>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <!-- Delice des sens -->
+
+        <div class="cards__container">
+          <a href="delice_des_sens.html">
+            <img src="img/restaurants/le_delice_des_sens.webp" alt="">
+          </a>
+          <a href="delice_des_sens.html" class="text__container">
             <h3>Le délice des sens</h3>
             <p>Folie-Méricourt</p>
-          </div>
-        </a>
+          </a>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
       </section>
     </div>
+
   </main>
 
   <!-- footer -->
 
   <footer>
+    <ul class="footer__container">
+      <h1>ohmyfood</h1>
+      <li class="footer__links">
+        <i class="fa-solid fa-utensils"></i>
+        <a href="" class="footer__link">Proposer un restaurant</a>
+      </li>
+      <li class="footer__links">
+        <i class="fa-solid fa-handshake-angle"></i>
+        <a href="" class="footer__link">Devenir partenaire</a>
+      </li>
+      <li class="footer__links">
+        <a href="" class="footer__link">Mentions légales</a>
+      </li>
+      <li class="footer__links">
+        <a href="" class="footer__link">Contact</a>
+      </li>
+    </ul>
   </footer>
 
 

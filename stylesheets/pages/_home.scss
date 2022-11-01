@@ -9,16 +9,17 @@ a,
 h1,
 h2,
 h3,
-h4,
-::before,
-::after {
+h4 {
     font-family: $font-text;
     text-decoration: none;
 }
 
 body {
     color: $dark-font;
+
 }
+
+
 
 /** location **/
 
@@ -36,18 +37,20 @@ body {
         margin-left: 20px;
         line-height: 50px;
     }
-    i{
+
+    i {
         align-self: center;
-        
-        
+
+
     }
 }
 
-/** Explore our restaurant **/
+/** Explore our restaurants **/
 
 .top__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 
     .top__container__presentation {
@@ -58,6 +61,7 @@ body {
         text-align: center;
         min-height: 350px;
         justify-content: space-around;
+        width: 100%;
 
         h2 {
             font-size: 1.3em;
@@ -70,6 +74,11 @@ body {
             font-weight: 300;
 
         }
+
+        @media (min-width: 768px) {
+            width: 50%;
+            background-color: white;
+        }
     }
 
     /** How it work **/
@@ -79,8 +88,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        width: 100%;
 
-        h2 {
+        .h2__main {
             font-size: 1.2em;
             font-weight: 800;
             margin-bottom: 20px;
@@ -136,16 +146,25 @@ body {
                 content: "3";
             }
         }
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
     }
+
 }
 
 /** Restaurants **/
 
-.restaurant__container {
+.restaurants__container {
     padding: 40px 25px;
     display: flex;
     flex-wrap: wrap;
     background-color: $bg-section;
+
+    @media (min-width: 768px) {
+        justify-content: space-between;
+    }
 
     h2 {
         width: 100%;
@@ -161,10 +180,15 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 20px;
-        width:100%;
+        width: 100%;
         -webkit-box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
-            box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.4);
+        text-decoration: none;
+        position:relative;
+        a{
+            width:100%;
+        }
         img {
             object-fit: cover;
             width: 100%;
@@ -172,36 +196,84 @@ body {
             border-radius: 15px 15px 0 0;
             display: block;
         }
+        i {
+            font-size: 25px;
+            position: absolute;
+            right: 20px;
+            top: 85%;
+            transform: translateY(-50%);
+            transition: transform .2s;
+            cursor: pointer;
+            &:hover + .fa-solid{
+                display:block;
+                transform: translateY(-50%) scale(1);
+            }
+            &:hover + .fa-regular{
+                color: transparent;
+                transition: none;
+                display: none;
+                color:white
+            }
+           
+        }
+        .fa-regular:hover{
+            display:none;
+           }
 
+        .fa-solid {
+            background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translateY(-50%) scale(0);
+           
+            
+        }  
         .text__container {
-            padding:15px 10px;
+            padding: 15px 10px;
             display: flex;
-            flex-wrap: wrap;
-            width:100%;
+            flex-direction: column;
+            width:auto;
+            text-decoration: none;
+
             h3 {
                 font-size: 0.9em;
                 font-weight: 800;
-                width: 100%;
+                width: 150px;
+                
             }
-            p{
+
+            p {
                 font-size: 0.7em;
-                width:100%;
+                width: 150px;
+                
             }
+
+            
+
+        }
+
+        @media (min-width: 768px) {
+            width: 48%;
+
         }
     }
-    .cards__container--new{
-        position:relative;
-        &::before{
+
+
+    .cards__container--new {
+
+        &::before {
+
             content: "Nouveau";
             position: absolute;
             background-color: $green;
             font-size: 0.6em;
-            padding:5px 10px;
+            padding: 5px 10px;
             font-weight: 600;
-            color:rgb(46, 145, 113);
-            top:15px;
-            right:15px;
+            color: rgb(46, 145, 113);
+            top: 15px;
+            right: 15px;
             border-radius: 2px;
         }
     }
 }
+

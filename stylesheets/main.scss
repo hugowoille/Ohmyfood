@@ -25,11 +25,13 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/effect';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/restaurants';
 
 // 7. Themes
 @import
