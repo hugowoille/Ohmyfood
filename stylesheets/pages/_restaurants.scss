@@ -1,57 +1,130 @@
+.main__restaurants {
 
-.main__restaurants{
-    
     background-color: $bg-section;
 }
-.top__img{
-    display:block;
-    width:100%;
+
+.header__restaurants {
     position: relative;
-    z-index: 1;
+
+    .top__title {
+        display: none;
+        color: white;
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 2em;
+        height: calc(100% - 40px);
+        position: absolute;
+        z-index: 2;
+        top: calc(50% - 20px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 300px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.37);
+
+        @media (min-width:1024px) {
+            display: block;
+
+        }
+    }
+
+    .top__img {
+        display: block;
+        width: 100%;
+
+        &::before {
+            content: "hello";
+            display: block;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            z-index: 10;
+        }
+
+        @media (min-width:1024px) {
+            max-height: 300px;
+            object-fit: cover;
+
+        }
+    }
+
 }
 
-.restaurant__container{
+
+.restaurant__container {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
     border-radius: 30px 30px 0 0;
     position: relative;
-    top:-40px;
+    top: -40px;
     z-index: 2;
     background-color: $bg-section;
-    .service__container{
+
+   
+
+    .service__container {
         margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: -20px;
+        }
     }
-    .name__restaurant__container{
+
+    .name__restaurant__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:30px 0;
-        h2{
+        padding: 30px 0;
+
+        h2 {
             font-family: $font-title;
             font-weight: 500;
             font-size: 1.3em;
         }
-        i{
+
+        i {
             margin-right: 10px;
         }
     }
-    h3{
+
+    h3 {
         font-weight: 300;
         font-size: 0.9em;
         position: relative;
         margin-bottom: 15px;
-        &:after{
+
+        &:after {
             content: "";
             position: absolute;
-            bottom:-3px;
-            width:40px;
-            height:3px;
+            bottom: -3px;
+            width: 40px;
+            height: 3px;
             background-color: $green;
-            left:0;
+            left: 0;
+        }
+    }
+    @media (min-width:1024px) {
+        flex-direction: row;
+        justify-content: space-around;
+        .name__restaurant__container{
+            display: none;
+        }
+        .service__container{
+            width:30%;
+            margin-bottom: 0;
+            h3{
+                margin:50px 0;
+            }
         }
     }
 }
-.btn--large{
-    padding:13px 50px;
+
+.button__container {
+    display: flex;
+    .btn--large {
+        padding: 13px 50px;
+        margin-bottom: 30px;
+    }
 }
