@@ -1340,36 +1340,17 @@ h4 {
 }
 
 .restaurant__container .service__container:nth-child(2) {
-  -webkit-animation: fadeIn ease 2s;
-          animation: fadeIn ease 2s;
+  -webkit-animation: movein ease 1000ms;
+          animation: movein ease 1000ms;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .restaurant__container .service__container:nth-child(3) {
-  -webkit-animation: fadeIn ease 2s;
-          animation: fadeIn ease 2s;
+  -webkit-animation: movein ease 2s;
+          animation: movein ease 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-delay: 400ms;
@@ -1379,18 +1360,9 @@ h4 {
   opacity: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .restaurant__container .service__container:nth-child(4) {
-  -webkit-animation: fadeIn ease 2s;
-          animation: fadeIn ease 2s;
+  -webkit-animation: movein ease 2s;
+          animation: movein ease 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-delay: 800ms;
@@ -1400,12 +1372,29 @@ h4 {
   opacity: 0;
 }
 
-@keyframes fadeIn {
+@-webkit-keyframes movein {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
