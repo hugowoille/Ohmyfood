@@ -475,7 +475,7 @@ footer {
   position: relative;
 }
 
-footer h1 {
+footer .footer__links--title {
   font-family: "Shrikhand", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +490,7 @@ footer h1 {
 }
 
 @media (min-width: 1024px) {
-  footer h1 {
+  footer .footer__links--title {
     margin-bottom: 0;
   }
 }
