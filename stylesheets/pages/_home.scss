@@ -14,7 +14,7 @@ h4 {
     text-decoration: none;
 }
 
-body {
+.body__home {
     color: $dark-font;
     animation: oflow ease 2s;
     animation-iteration-count: 1;
@@ -76,7 +76,7 @@ body {
     width: 100%;
 
     .top__container__presentation {
-        background-color: $bg-section;
+        background-color: rgb(252, 252, 252);
         padding: 40px;
         display: flex;
         flex-direction: column;

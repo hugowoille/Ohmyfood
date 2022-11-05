@@ -16,10 +16,24 @@ nav {
   justify-content: center;
   align-items: center;
 
+  .arrow__left__container {
+    display: flex;
+    align-items: center;
+    .fa-arrow-left {
+      color: rgb(77, 77, 77);
+      position: absolute;
+      left: 10%;
+      font-size: 1.4em;
+    }
+  }
+
   .nav__links {
     display: none;
-    ul{
-      display:none;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -37,6 +51,10 @@ nav {
   @media (min-width: 1024px) {
     justify-content: space-between;
     padding: 0 30px;
+
+    .arrow__left__container{
+      display: none;
+    }
 
     .logo {
       margin: unset;
