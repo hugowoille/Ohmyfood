@@ -227,24 +227,17 @@ h4 {
             right: 20px;
             top: 85%;
             transform: translateY(-50%);
+
             transition: transform .2s;
             cursor: pointer;
             &:hover + .fa-solid{
                 display:block;
                 transform: translateY(-50%) scale(1);
             }
-            &:hover + .fa-regular{
-                color: transparent;
-                transition: none;
-                display: none;
-                color:white
-            }
-           
         }
-        .fa-regular:hover{
-            display:none;
-           }
-
+        .fa-regular{
+            z-index: 2;
+        }
         .fa-solid {
             background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
             -webkit-background-clip: text;
@@ -313,7 +306,7 @@ h4 {
 }
 .loader{
     background-color: $green;
-    position: absolute;
+    position: fixed;
     top:0;
   left:0;
   width:100%;
@@ -333,6 +326,7 @@ h4 {
         70%{
             opacity: 1;
         }
+        
         100%{
             opacity: 0;
             z-index: 0;

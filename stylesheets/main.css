@@ -1104,16 +1104,8 @@ h4 {
           transform: translateY(-50%) scale(1);
 }
 
-.restaurants__container .cards__container i:hover + .fa-regular {
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-  display: none;
-  color: white;
-}
-
-.restaurants__container .cards__container .fa-regular:hover {
-  display: none;
+.restaurants__container .cards__container .fa-regular {
+  z-index: 2;
 }
 
 .restaurants__container .cards__container .fa-solid {
@@ -1183,7 +1175,7 @@ h4 {
 
 .loader {
   background-color: #99E2D0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

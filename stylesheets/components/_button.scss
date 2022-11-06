@@ -19,13 +19,14 @@
     -moz-box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
     transition: all .4s;
-    &:hover{
-        color:white;
+
+    &:hover {
+        color: white;
         text-decoration: none;
-        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
--webkit-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
--moz-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
-    filter: brightness(1.1);
+        box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.51);
+        -webkit-box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.51);
+        -moz-box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.51);
+        filter: brightness(1.1);
     }
 
 }
