@@ -49,10 +49,6 @@
     justify-content: space-evenly;
     margin:7px 0 ;
     flex-grow: 1;
-    @media (max-width: 365px) {
-        
-
-    }
 
     h4 {
         font-family: $font-text;
@@ -63,7 +59,7 @@
         text-overflow: ellipsis;
         transition: .4s;
         @media (max-width: 365px) {
-            max-width:70%;
+            max-width:80%;
 
         }
     }
@@ -73,15 +69,11 @@
         justify-content: space-between;
         width: 100%;
         transition: .4s;
-        @media (max-width: 365px) {
-           
-
-        }
         p {
             font-family: $font-text;
             font-size: 0.7em;
             @media (max-width: 365px) {
-                max-width:150px;
+                max-width:200px;
 
             }
         }
@@ -97,10 +89,6 @@
         .details__container--price {
             font-weight: 800;
             margin-right: 15px;
-            @media (max-width: 365px) {
-                
-
-            }
         }
     }
 
