@@ -692,10 +692,6 @@ nav .logo img {
   width: calc(100% - 60px);
 }
 
-.txt__effect__container:hover .details__container .details__container--p {
-  width: 70%;
-}
-
 .txt__effect__container:hover .txt__container h4 {
   width: 70%;
 }
@@ -768,7 +764,7 @@ nav .logo img {
 
 .txt__container .details__container .details__container--p {
   font-weight: 300;
-  width: 100%;
+  width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -813,37 +809,6 @@ h4 {
 
 .body__home {
   color: #3b3b3b;
-  -webkit-animation: oflow ease 2s;
-          animation: oflow ease 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  position: relative;
-}
-
-@-webkit-keyframes oflow {
-  0% {
-    overflow: hidden;
-  }
-  70% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: auto;
-  }
-}
-
-@keyframes oflow {
-  0% {
-    overflow: hidden;
-  }
-  70% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: auto;
-  }
 }
 
 .home__container {
@@ -977,7 +942,7 @@ h4 {
   position: relative;
 }
 
-.top__container .top__container__rules .rules__links a {
+.top__container .top__container__rules .rules__links p {
   font-size: 0.8em;
   font-weight: 600;
 }
@@ -1027,6 +992,7 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #ececec;
+  /** new banneer **/
 }
 
 @media (min-width: 768px) {
@@ -1069,6 +1035,10 @@ h4 {
   box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.4);
   text-decoration: none;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /** heart effect **/
 }
 
 .restaurants__container .cards__container a {
@@ -1084,36 +1054,57 @@ h4 {
   display: block;
 }
 
-.restaurants__container .cards__container i {
+.restaurants__container .cards__container .heart_container {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 50px;
   font-size: 25px;
+}
+
+.restaurants__container .cards__container .heart_container .heart {
   position: absolute;
-  right: 20px;
-  top: 85%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
-.restaurants__container .cards__container i:hover + .fa-solid {
-  display: block;
-  -webkit-transform: translateY(-50%) scale(1);
-          transform: translateY(-50%) scale(1);
+.restaurants__container .cards__container .heart_container .heart .fa-regular {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.restaurants__container .cards__container .fa-regular {
-  z-index: 2;
-}
-
-.restaurants__container .cards__container .fa-solid {
+.restaurants__container .cards__container .heart_container .heart .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transform: translateY(-50%) scale(0);
-          transform: translateY(-50%) scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.restaurants__container .cards__container .heart_container input[type=checkbox] {
+  display: none;
+}
+
+.restaurants__container .cards__container .heart_container input:checked + label .fa-solid {
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.restaurants__container .cards__container .fa-last {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .restaurants__container .cards__container .text__container {
@@ -1152,11 +1143,6 @@ h4 {
   }
   .restaurants__container .cards__container img {
     min-height: 400px;
-  }
-  .restaurants__container .cards__container i {
-    bottom: 150px;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
 }
 

@@ -28,10 +28,6 @@
 
         .details__container {
             width: calc(100% - 60px);
-
-            .details__container--p {
-                width: 70%;
-            }
         }
         .txt__container{
             h4{
@@ -92,7 +88,7 @@
 
         .details__container--p {
             font-weight: 300;
-            width: 100%;
+            width: 80%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;

@@ -62,7 +62,7 @@
       <section class="top__container__presentation">
         <h2 class="h2__main">Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <a href="#" class="btn">Explorer nos restaurants</a>
+        <a href="#scrollto__restaurants" class="btn">Explorer nos restaurants</a>
       </section>
 
       <!-- rules -->
@@ -71,79 +71,106 @@
         <h2>Fonctionnement</h2>
         <div class="rules__links">
           <i class="fa-solid fa-mobile-screen-button"></i>
-          <a href="">Choisissez votre restaurant</a>
+          <p> Choisissez votre restaurant</p>
         </div>
         <div class="rules__links">
           <i class="fa-solid fa-list-ul"></i>
-          <a href="">Composez votre menu</a>
+          <p> Composez votre menu</p>
         </div>
         <div class="rules__links">
           <i class="fa-sharp fa-solid fa-store"></i>
-          <a href="">Dégustez au restaurant</a>
+          <p> Dégustez au restaurant</p>
         </div>
       </section>
     </div>
-      <!-- restaurants -->
+    <!-- restaurants -->
 
-      <section class="restaurants__container">
-        <h2 id="scrollto__restaurants">Restaurants</h2>
+    <section class="restaurants__container">
+      <h2 id="scrollto__restaurants">Restaurants</h2>
 
-        <!-- La palette de gout -->
+      <!-- La palette de gout -->
 
-        <div class="cards__container cards__container--new">
-          <a href="palette_de_gout.html">
-            <img src="img/restaurants/la_palette_de_gout.webp" alt="">
-          </a>
-          <a href="palette_de_gout.html" class="text__container">
-            <h3>La palette de goût</h3>
-            <p>Ménilmontant</p>
-          </a>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+      <div class="cards__container cards__container--new">
+        <a href="palette_de_gout.html">
+          <img src="img/restaurants/la_palette_de_gout.webp" alt="">
+        </a>
+        <a href="palette_de_gout.html" class="text__container">
+          <h3>La palette de goût</h3>
+          <p>Ménilmontant</p>
+        </a>
+        <div class="heart_container">
+          <input type="checkbox" id="monId--1">
+          <label class="heart" for="monId--1">
+            <i class="fa-regular fa-heart fa-last">
+              <i class="fa-solid fa-heart"></i>
+            </i>
+          </label>
         </div>
+        
+      </div>
 
-        <!-- La note enchantée -->
+      <!-- La note enchantée -->
 
-        <div class="cards__container cards__container--new">
-          <a href="note_enchantee.html">
-            <img src="img/restaurants/la_note_enchantee.webp" alt="">
-          </a>
-          <a href="note_enchantee.html" class="text__container">
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
-          </a>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+      <div class="cards__container cards__container--new">
+        <a href="note_enchantee.html">
+          <img src="img/restaurants/la_note_enchantee.webp" alt="">
+        </a>
+        <a href="note_enchantee.html" class="text__container">
+          <h3>La note enchantée</h3>
+          <p>Charonne</p>
+        </a>
+        <div class="heart_container">
+          <input type="checkbox" id="monId--2">
+          <label class="heart" for="monId--2">
+            <i class="fa-regular fa-heart fa-last">
+              <i class="fa-solid fa-heart"></i>
+            </i>
+          </label>
         </div>
+      </div>
 
-        <!-- A la française -->
+      <!-- A la française -->
 
-        <div class="cards__container">
-          <a href="a_la_francaise.html">
-            <img src="img/restaurants/a_la_francaise.webp" alt="">
-          </a>
-          <a href="a_la_francaise.html" class="text__container">
-            <h3>À la française</h3>
-            <p>Cité Rouge</p>
-          </a>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+      <div class="cards__container">
+        <a href="a_la_francaise.html">
+          <img src="img/restaurants/a_la_francaise.webp" alt="">
+        </a>
+        <a href="a_la_francaise.html" class="text__container">
+          <h3>À la française</h3>
+          <p>Cité Rouge</p>
+        </a>
+        <div class="heart_container">
+          <input type="checkbox" id="monId--3">
+          <label class="heart" for="monId--3">
+            <i class="fa-regular fa-heart fa-last">
+              <i class="fa-solid fa-heart"></i>
+            </i>
+          </label>
         </div>
+      </div>
 
-        <!-- Delice des sens -->
+      <!-- Delice des sens -->
 
-        <div class="cards__container">
-          <a href="delice_des_sens.html">
-            <img src="img/restaurants/le_delice_des_sens.webp" alt="">
-          </a>
-          <a href="delice_des_sens.html" class="text__container">
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-          </a>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+      <div class="cards__container">
+        <a href="delice_des_sens.html">
+          <img src="img/restaurants/le_delice_des_sens.webp" alt="">
+        </a>
+        <a href="delice_des_sens.html" class="text__container">
+          <h3>Le délice des sens</h3>
+          <p>Folie-Méricourt</p>
+        </a>
+        
+        <div class="heart_container">
+          <input type="checkbox" id="monId--4">
+          <label class="heart" for="monId--4">
+            <i class="fa-regular fa-heart fa-last">
+              <i class="fa-solid fa-heart"></i>
+            </i>
+          </label>
         </div>
-      </section>
+        
+      </div>
+    </section>
 
 
   </main>
