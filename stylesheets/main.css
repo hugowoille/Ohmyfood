@@ -1076,6 +1076,7 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 .restaurants__container .cards__container .heart_container .heart .fa-solid {
@@ -1089,6 +1090,7 @@ h4 {
           transform: scale(0);
   -webkit-transition: .4s;
   transition: .4s;
+  z-index: -1;
 }
 
 .restaurants__container .cards__container .heart_container input[type=checkbox] {
@@ -1320,8 +1322,8 @@ h4 {
 }
 
 .restaurant__container .service__container:nth-child(2) {
-  -webkit-animation: movein ease 1000ms;
-          animation: movein ease 1000ms;
+  -webkit-animation: movein ease 800ms;
+          animation: movein ease 800ms;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;

@@ -14,30 +14,34 @@
     -moz-box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 4px 16px -7px rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
-    
+
 
     &:hover {
         .effect__container {
             transform: translateX(0);
-            i{
+
+            i {
                 transform: rotate(360deg);
                 transition: transform .4s;
-                
+
             }
         }
 
         .details__container {
             width: calc(100% - 60px);
         }
-        .txt__container{
-            h4{
-                width:70%;
+
+        .txt__container {
+            h4 {
+                width: 70%;
             }
         }
     }
+
     @media (min-width:1024px) {
         margin-bottom: 30px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -47,19 +51,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin:7px 0 ;
+    margin: 7px 0;
     flex-grow: 1;
 
     h4 {
         font-family: $font-text;
         font-size: 0.8em;
-        width:100%;
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transition: .4s;
+
         @media (max-width: 365px) {
-            max-width:80%;
+            max-width: 80%;
 
         }
     }
@@ -69,11 +74,13 @@
         justify-content: space-between;
         width: 100%;
         transition: .4s;
+
         p {
             font-family: $font-text;
             font-size: 0.7em;
+
             @media (max-width: 365px) {
-                max-width:200px;
+                max-width: 200px;
 
             }
         }
@@ -104,7 +111,8 @@
     right: 0;
     transform: translateX(80px);
     transition: transform .4s;
-    &:hover{
-        color:white;
+
+    &:hover {
+        color: white;
     }
 }
