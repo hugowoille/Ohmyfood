@@ -29,6 +29,7 @@
 
         .details__container {
             width: calc(100% - 60px);
+        
         }
 
         .txt__container {
@@ -87,7 +88,7 @@
 
         .details__container--p {
             font-weight: 300;
-            width: 80%;
+            
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;

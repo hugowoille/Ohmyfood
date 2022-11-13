@@ -764,7 +764,6 @@ nav .logo img {
 
 .txt__container .details__container .details__container--p {
   font-weight: 300;
-  width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1324,17 +1323,13 @@ h4 {
 .restaurant__container .service__container:nth-child(2) {
   -webkit-animation: movein ease 800ms;
           animation: movein ease 800ms;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .restaurant__container .service__container:nth-child(3) {
-  -webkit-animation: movein ease 2s;
-          animation: movein ease 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  -webkit-animation: movein ease 800ms;
+          animation: movein ease 800ms;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
   -webkit-animation-fill-mode: forwards;
@@ -1343,10 +1338,8 @@ h4 {
 }
 
 .restaurant__container .service__container:nth-child(4) {
-  -webkit-animation: movein ease 2s;
-          animation: movein ease 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  -webkit-animation: movein ease 800ms;
+          animation: movein ease 800ms;
   -webkit-animation-delay: 800ms;
           animation-delay: 800ms;
   -webkit-animation-fill-mode: forwards;
